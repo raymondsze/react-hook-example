@@ -8,7 +8,7 @@ export type UseSymbolBidAskProps = {
   symbol: string;
 };
 
-const useSymbolBidAsk = ({ appState, webSocketState, symbol }: StateContextValue & { symbol: string }) => {
+const useSymbolBidAsk = ({ appState, webSocketState, symbol }: UseSymbolBidAskProps) => {
   const topic = useMemo(() => createDepthTopicFromSymbol(symbol, appState.depth), [symbol, appState.depth]);
   const stream = useMemo(() => webSocketState.streams.get(topic), [webSocketState.streams]);
   const bids = useMemo(() => stream && stream.bids ? stream.bids : [], [stream && stream.bids]);
