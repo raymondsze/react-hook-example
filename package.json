@@ -1,0 +1,42 @@
+{
+  "name": "react-hook-example",
+  "version": "1.0.0",
+  "description": "React hook price feed example",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "hook",
+    "react",
+    "reactjs",
+    "example"
+  ],
+  "homepage": "https://github.com/raymondsze/react-hook-example",
+  "dependencies": {
+    "@types/jest": "24.0.9",
+    "@types/node": "11.9.6",
+    "@types/react": "16.8.6",
+    "@types/react-dom": "16.8.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "styled-components": "^4.1.3",
+    "typescript": "3.3.3333"
+  },
+  "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
