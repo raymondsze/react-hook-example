@@ -10,7 +10,7 @@
     "reactjs",
     "example"
   ],
-  "homepage": "https://github.com/raymondsze/react-hook-example",
+  "homepage": "https://raymondsze.github.io/react-hook-example",
   "dependencies": {
     "@types/jest": "24.0.9",
     "@types/node": "11.9.6",
