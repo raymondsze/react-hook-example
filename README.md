@@ -5,7 +5,10 @@ React MVVM architecture powered by pure React Hook.
 Thanks [gaplo917](https://github.com/gaplo917) demostrate the strength of Mobx in Show-Me-The-Code event in Hong Kong.  
 This example is a hook version of a simple crypto-currency price feed application https://github.com/gaplo917/mobx-react-mvvm-example.  
 It is not full replacement to Mobx (At least it is not an observer pattern), if you want to use Mobx like what we could do in React Hook, please check out https://github.com/mobxjs/mobx-react-lite.  
-To simplify the deomonstration, I use **useState** instead of **useReducer**. In real-world large application, useReducer would be better choice for state management.
+
+To simplify the deomonstration, I use **useState** instead of **useReducer**. In real-world large application, useReducer would be better choice for state management.  
+
+I use lots of **useMemo** to achieve the approximate rendering performance that we have in Mobx. In real-world application, you do not use **useMemo** heavily for all the attributes unless you hit the performance bottleneck.
 
 ### Objective:
 * Demostrate how to write MVVM architecture using React Hook.
